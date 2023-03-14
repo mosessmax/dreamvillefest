@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: "Michroma", sans-serif;
-  src: url("/Queering.otf");
+  src: url("./Queering.otf");
 }
 
 .container {
