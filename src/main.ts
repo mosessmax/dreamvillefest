@@ -1,4 +1,9 @@
 import "./style.css";
+import "splitting/dist/splitting.css";
+import "splitting/dist/splitting-cells.css";
+import Splitting from "splitting";
+
+Splitting();
 
 function format(v: number): string {
   return v.toString().length == 1 ? "0" + v : v.toString();
@@ -49,7 +54,7 @@ window.addEventListener("load", () => {
   const total = document.getElementsByTagName("*").length;
   const interval = setInterval(() => {
     const percent = Math.round((loaded / total) * 100);
-    count.innerHTML = percent + "%";
+    count.innerHTML = percent + " !";
     loaded++;
     if (loaded === total) {
       clearInterval(interval);
