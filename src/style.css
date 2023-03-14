@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -33,6 +33,19 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.main {
+  font-size: 11rem;
+  font-weight: 100;
+  /* width: 1000px;
+  height: 900px; */
+  /* text-align: center;
+  align-content: center; */
+  justify-content: center;
+  line-height: 130px;
+  text-align: center;
+  font-family: Queering;
 }
 
 // marquee
@@ -109,6 +122,7 @@ body {
   left: 0;
   width: 100%;
   text-align: center;
+  text-transform: uppercase;
 }
 .countdown.style-1 div {
   margin: 0 1rem;
@@ -125,7 +139,7 @@ body {
 }
 
 // responsivness
-/* For screens with a width of 600px or less */
+/* For screens with width of 600px or less */
 
 @media (max-width: 768px) {
   .preloader {
@@ -138,8 +152,14 @@ body {
     font-size: 3rem;
   }
 }
-
-/* For screens with a width of 400px or less */
+/* main  */
+@media (max-width: 500px) {
+  .main {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+}
+/* countdown  */
 @media (max-width: 400px) {
   .countdown div {
     font-size: 2rem;
