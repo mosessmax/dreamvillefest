@@ -76,3 +76,5 @@ window.addEventListener("load", () => {
 
   document.addEventListener("readystatechange", checkReadyState);
 });
+
+// cloudlare 😒
