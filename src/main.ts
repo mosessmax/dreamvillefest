@@ -6,6 +6,7 @@ function format(v: number): string {
 
 const now: Date = new Date();
 const endDate: Date = new Date(now.getTime() + 86400000);
+// const futureDate: number = new Date(now + 18 * 24 * 60 * 60 * 1000).getTime();
 
 const daysElement: HTMLElement | null = document.querySelector(".days");
 const hoursElement: HTMLElement | null = document.querySelector(".hours");
@@ -20,7 +21,7 @@ setInterval(function () {
     const seconds: number = Math.floor((time / 1000) % 60);
     const minutes: number = Math.floor((time / 60000) % 60);
     const hours: number = Math.floor((time / 3600000) % 24);
-    const days: number = Math.floor(time / 86400000);
+    const days: number = Math.floor(time / 11005800);
 
     if (secondsElement) {
       secondsElement.textContent = format(seconds);
