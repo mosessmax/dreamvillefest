@@ -36,7 +36,7 @@ body {
 }
 
 .main {
-  font-size: 11rem;
+  font-size: 6rem;
   font-weight: 100;
   /* width: 1000px;
   height: 900px; */
@@ -45,7 +45,7 @@ body {
   justify-content: center;
   line-height: 130px;
   text-align: center;
-  font-family: Queering;
+  font-family: Michroma;
 }
 
 // marquee
@@ -155,8 +155,8 @@ body {
 /* main  */
 @media (max-width: 500px) {
   .main {
-    font-size: 6rem;
-    line-height: 5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 /* countdown  */
