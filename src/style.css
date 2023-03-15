@@ -19,8 +19,8 @@
 }
 
 @font-face {
-  font-family: "Michroma", sans-serif;
-  src: url("./Queering.otf");
+  font-family: "Queering", sans-serif;
+  src: url("./Queering.woff");
 }
 
 .container {
