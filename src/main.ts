@@ -60,7 +60,11 @@ window.addEventListener("load", () => {
     if (loaded === total) {
       clearInterval(interval);
       setTimeout(() => {
-        preloader.style.display = "none";
+        gsap.to(".preloader", 1.5, {
+          delay: .5,
+          top: "-100%",
+          ease: Expo.easeInOut
+        });
       }, 1000);
     }
   }, 20);
