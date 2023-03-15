@@ -2,6 +2,7 @@ import "./style.css";
 import "splitting/dist/splitting.css";
 import "splitting/dist/splitting-cells.css";
 import Splitting from "splitting";
+import gsap from "gsap";
 
 Splitting();
 
@@ -62,7 +63,7 @@ window.addEventListener("load", () => {
         preloader.style.display = "none";
       }, 1000);
     }
-  }, 50);
+  }, 20);
 
   function checkReadyState() {
     if (document.readyState === "complete") {
@@ -78,3 +79,21 @@ window.addEventListener("load", () => {
 });
 
 // cloudlare 😒
+
+// animate
+// const content = document.getElementById("body");
+
+// /* Wait for the preloader to complete */
+// window.addEventListener("load", () => {
+//   /* Add the animate-in class to trigger the animation */
+//   content.classList.add("animate-in");
+// });
+
+/* Get a reference to your content element */
+const main = document.getElementById("main");
+
+/* Wait for the preloader to complete */
+window.addEventListener("load", () => {
+  /* Use GSAP to fade in the content */
+  gsap.from(main, { opacity: 0, duration: 1 });
+});
