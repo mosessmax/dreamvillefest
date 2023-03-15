@@ -60,6 +60,7 @@ window.addEventListener("load", () => {
     if (loaded === total) {
       clearInterval(interval);
       setTimeout(() => {
+        // animate after count
         gsap.to(".preloader", 1.5, {
           delay: .5,
           top: "-100%",
